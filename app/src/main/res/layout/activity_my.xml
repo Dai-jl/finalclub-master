@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+<androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="我的"
+    android:layout_marginLeft="170dp"
+    android:textSize="22sp"
+    android:textColor="#000"
+    />
+
+</androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="@color/background"
+        >
+
+        <Button
+            android:id="@+id/img_head_login"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/img_head_login"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击头像登陆"
+            android:layout_toRightOf="@+id/img_head_login"
+            android:layout_marginTop="40dp"
+            android:textSize="15dp"
+            />
+
+    </RelativeLayout>
+        <ListView
+            android:id="@+id/my_notlogin_listview"
+    android:layout_width="match_parent"
+    android:layout_height="442dp">
+
+        </ListView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+
+        android:background="#FFF"
+        app:itemTextColor="@drawable/selectorcolor"
+        app:itemIconTint="@drawable/selectorcolor"
+        app:menu="@menu/bottom_nav_menu"
+
+        />
+
+
+</LinearLayout>

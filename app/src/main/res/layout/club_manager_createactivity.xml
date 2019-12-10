@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<TextView
+    android:id="@+id/text_shenqing"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="活动申请"
+    android:textColor="@color/colorPrimary"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginTop="50dp"
+    />
+
+        <TextView
+            android:id="@+id/text_activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动名称:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_shenqing"
+          android:layout_marginTop="10dp"
+            android:textSize="15sp"
+
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_activityname"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_shenqing"
+            />
+
+
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开展时间:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_activity_name"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_time"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_activity_name"
+            android:layout_marginTop="10dp"
+            />
+            <TextView
+                android:id="@+id/text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动人数:   "
+                app:layout_constraintTop_toBottomOf="@+id/text_time"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+            <EditText
+                android:id="@+id/edit_number"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_time"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/text_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="是否为内部活动:   "
+                app:layout_constraintTop_toBottomOf="@+id/text_number"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+            <Spinner
+                android:id="@+id/edit_in"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                app:layout_constraintLeft_toRightOf="@+id/text_in"
+                app:layout_constraintTop_toBottomOf="@+id/text_number"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_marginLeft="50dp"
+                />
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动地点:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_in"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <Spinner
+            android:id="@+id/edit_location"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toRightOf="@+id/text_location"
+            app:layout_constraintTop_toBottomOf="@+id/text_in"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="95dp"
+            />
+        <TextView
+            android:id="@+id/text_leader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负责人:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_location"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_leader"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_location"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/text_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_leader"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_leader"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/text_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动预算:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_phone"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_budget"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toRightOf="@+id/text_activity_name"
+            app:layout_constraintTop_toBottomOf="@+id/text_phone"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动内容:   "
+            app:layout_constraintTop_toBottomOf="@+id/text_budget"
+            android:layout_marginTop="25dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+        <EditText
+            android:id="@+id/edit_content"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_budget"
+            android:layout_marginTop="70dp"
+            android:hint="请输入任务内容"
+            android:maxLines="20"
+            android:background="@drawable/edit_bg"
+            android:gravity="top"
+            android:layout_marginLeft="40dp"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/button_commit_activity"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape"
+            android:text="提交"
+            android:textColor="#fff"
+            app:layout_constraintTop_toBottomOf="@+id/edit_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>

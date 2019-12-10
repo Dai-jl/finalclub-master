@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/change_pwd_toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+
+        >
+        <ImageView
+            android:id="@+id/change_pwd_imgback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_back"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="社团管理"
+            android:layout_marginLeft="130dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:background="@drawable/tips_big"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="110dp"/>
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亲没有社团管理的权限哦..."
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_below="@+id/star"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="110dp" />
+
+
+
+
+</LinearLayout>

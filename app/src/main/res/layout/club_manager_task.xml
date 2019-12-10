@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/task_content"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_margin="30dp"
+        android:hint="请输入任务内容"
+        android:textSize="15sp"
+        android:maxLines="10"
+        android:background="@drawable/edit_bg"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_commit_task"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:text="提交"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:background="@drawable/star"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="110dp"/>
+    <TextView
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无社团通知，快去加入社团..."
+        android:textColor="#CB000000"
+        android:textSize="18dp"
+        android:layout_below="@+id/star"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="90dp" />
+    <TextView
+        android:id="@+id/onclick_join"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_underline"
+        android:layout_below="@+id/tips"
+        android:layout_marginTop="60dp"
+        android:text="加入社团"
+        android:textSize="20dp"
+        android:textColor="#F72942CC"
+        android:layout_marginLeft="170dp"/>
+
+</RelativeLayout>

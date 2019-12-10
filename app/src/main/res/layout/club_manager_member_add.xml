@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="学号："
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/add_number"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/l1">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="姓名："
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/add_name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/l2">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="入团时间："
+            android:textColor="#000"
+            android:textSize="17dp"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/add_time"
+            android:layout_width="166dp"
+            android:layout_height="40dp"
+            android:textSize="17dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/l3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/l2">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/add_sure"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:text="新增成员"/>-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

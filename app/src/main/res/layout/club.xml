@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFF"
+        android:text="社 团"
+        android:textSize="24dp"
+        android:textColor="#000"
+        android:gravity="center"
+
+        />
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/title"
+        android:background="@color/background" />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="#FFF"-->
+        <!--android:layout_below="@+id/line"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/join"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="我加入的"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="#CB000000"-->
+            <!--android:background="@drawable/btn_txt_color_sel"-->
+            <!--android:layout_weight="1"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/attention"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="我关注的"-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="#CB000000"-->
+            <!--android:background="@drawable/btn_txt_color_sel"-->
+            <!--android:layout_weight="1"/>-->
+    <!--</LinearLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/button"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line">
+
+        <Button
+            android:id="@+id/join"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="我加入的"
+            android:textColor="#ff0AAD32"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="25dp"
+
+            style="?android:attr/borderlessButtonStyle"
+            />
+        <TextView
+            android:id="@+id/line_join"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textSize="2sp"
+            android:background="#ff0AAD32"
+            app:layout_constraintCircle="@id/join"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="28dp"
+
+            />
+
+        <Button
+            android:id="@+id/attention"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="我关注的"
+
+            android:textSize="18sp"
+            app:layout_constraintCircle="@id/join"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="180dp"
+            style="?android:attr/borderlessButtonStyle"
+            />
+
+        <TextView
+            android:id="@+id/line_att"
+            android:layout_width="40dp"
+            android:layout_height="0dp"
+            android:background="#000"
+            android:textSize="2sp"
+            app:layout_constraintCircle="@id/attention"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="28dp"
+            tools:layout_editor_absoluteX="184dp"
+            tools:layout_editor_absoluteY="53dp"
+            android:visibility="gone"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        layout="@layout/click_join"
+        android:id="@+id/no_join"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_below="@+id/button" />
+    <include
+        layout="@layout/click_attention"
+        android:id="@+id/no_att"
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:layout_below="@+id/button"
+        android:visibility="gone"/>
+
+    横向滑动的社团logo
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/club_logo_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/button"
+        android:background="#fff"
+        android:visibility="gone">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    竖向滑动的社团任务
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/background"
+        android:id="@+id/club_task_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/club_logo_view"
+        android:visibility="gone"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    竖向滑动的社团推送
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="@color/background"
+        android:id="@+id/club_passage_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/club_logo_view"
+        android:visibility="gone">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#FFF"
+        app:itemTextColor="@drawable/selectorcolor"
+        app:itemIconTint="@drawable/selectorcolor"
+        app:menu="@menu/bottom_nav_menu"
+        />
+</RelativeLayout>

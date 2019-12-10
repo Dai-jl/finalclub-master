@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_member"
+        android:icon="@drawable/add_mem"
+        android:title="@string/add_mem" />
+
+    <item
+        android:id="@+id/dele_member"
+        android:icon="@drawable/delete"
+        android:title="@string/dele_mem" />
+
+    <item
+        android:id="@+id/transfer_leader"
+        android:icon="@drawable/transfer"
+        android:title="@string/transfer_leader" />
+
+</menu>

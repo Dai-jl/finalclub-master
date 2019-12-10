@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout android:background="@color/background"
+    android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    -<LinearLayout android:background="@color/colorPrimary" android:layout_height="60dp" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/toolbar">
+
+    <ImageView android:background="@drawable/back1" android:layout_height="24dp" android:layout_width="24dp" android:id="@+id/back" android:layout_marginLeft="10dp" android:layout_gravity="center_vertical"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/title" android:layout_marginLeft="130dp" android:layout_gravity="center" android:textSize="20dp" android:textColor="#FFF" android:text="创建推送"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="60dp" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/l4" android:layout_marginTop="60dp" android:layout_below="@+id/toolbar">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="所属社团："/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:id="@+id/et1"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="请编辑完整的社团名"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="60dp" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/l1" android:layout_below="@+id/l4">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/word1"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp" android:textColor="@color/colorPrimaryDark" android:text="推送主题："/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:id="@+id/et2"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="60dp" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/l2" android:layout_below="@+id/l1">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="发布时间："/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:id="@+id/et3"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:hint="如：2019-11-24"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:id="@+id/l3" android:layout_below="@+id/l5">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="主题图片："/>
+
+    <ImageView android:background="@drawable/addphono"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+
+        android:id="@+id/picture" android:layout_marginLeft="8dp" android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
+
+
+    -<LinearLayout android:layout_height="80dp"
+    android:layout_width="match_parent"
+    android:orientation="horizontal" android:id="@+id/l5" android:layout_below="@+id/l2">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="推送连接："/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:id="@+id/et4"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+
+    <Button
+        android:background="@drawable/shape"
+        android:layout_height="50dp"
+        android:layout_width="300dp"
+        android:id="@+id/cancel_save"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="bottom"
+        android:textSize="22dp"
+        android:textColor="#FFF"
+        android:text="发 布"
+        android:layout_marginBottom="6dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        style="s"
+        />
+
+
+    <LinearLayout
+        android:background="#DAD5D5"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/pop_layout" android:layout_alignParentBottom="true" android:visibility="gone">
+
+    <Button android:background="#fff" android:layout_height="60dp" android:layout_width="fill_parent" android:id="@+id/take_photo" android:layout_gravity="center_vertical" android:textSize="22dp" android:text="拍摄"/>
+
+    <Button android:background="#fff" android:layout_height="60dp" android:layout_width="fill_parent" android:id="@+id/choose_from_album" android:layout_gravity="center_vertical" android:textSize="22dp" android:text="从手机相册选择" android:layout_marginTop="2dp"/>
+
+    <Button android:background="#fff" android:layout_height="80dp" android:layout_width="fill_parent" android:id="@+id/cancle" android:layout_gravity="center_vertical" android:textSize="22dp" android:text="取消" android:layout_marginTop="10dp"/>
+
+</LinearLayout>
+
+</RelativeLayout>

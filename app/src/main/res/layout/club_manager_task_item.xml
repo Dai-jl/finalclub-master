@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="360dp"
+    android:layout_height="80dp"
+    android:background="@drawable/shadow"
+    android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+    >
+    <TextView
+        android:id="@+id/activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2019年轮滑社社团招新活动"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       />
+    <TextView
+        android:id="@+id/activity_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="未审核"
+        android:layout_marginRight="20dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        />
+</LinearLayout>

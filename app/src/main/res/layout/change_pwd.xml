@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Toolbar
+        android:id="@+id/change_pwd_toorbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        >
+        <ImageView
+            android:id="@+id/change_pwd_imgback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_back"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:layout_marginLeft="130dp"
+            android:textSize="22sp"
+            android:textColor="#000"
+            />
+
+    </Toolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:textSize="2sp"
+        app:layout_constraintTop_toBottomOf="@+id/change_pwd_toorbar"
+        />
+    <EditText
+        android:id="@+id/change_pwd_old"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请输入原密码"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:cursorVisible="false"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/change_pwd_toorbar"
+
+        android:inputType="textPassword"
+
+        />
+
+
+    <EditText
+        android:id="@+id/newpwd"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请设置8-16位的登陆密码"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/change_pwd_old"
+
+        />
+
+        <ImageView
+            android:id="@+id/showpwd"
+            android:layout_width="23dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="15dp"
+
+            app:layout_constraintCircle="@id/newpwd"
+            app:layout_constraintCircleRadius="140dp"
+            app:layout_constraintCircleAngle="90"
+            />
+
+
+
+    <EditText
+        android:id="@+id/newpwd1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="请确认密码"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/newpwd"
+        android:inputType="textPassword"
+
+        />
+    <ImageView
+        android:id="@+id/showpwd2"
+        android:layout_width="23dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="15dp"
+
+        app:layout_constraintCircle="@id/newpwd1"
+        app:layout_constraintCircleRadius="140dp"
+        app:layout_constraintCircleAngle="90"
+        />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:text="修改"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        app:layout_constraintCircle="@id/change_pwd_toorbar"
+        app:layout_constraintCircleRadius="350dp"
+        app:layout_constraintCircleAngle="180"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
